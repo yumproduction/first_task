@@ -27,9 +27,9 @@
                 <div class="form-group" :class="{ 'form-group--error': $v.defaultState.phone_number.$error}">
                   <label for="">Номер телефона <span></span></label><br/>
                   <input v-model="$v.defaultState.phone_number.$model" type="text" placeholder="7**********" id="phone_number">
-                  <div class="error" v-if="!$v.defaultState.phone_number.numeric">Номер телефона должен состоять только из цифер</div>
+                  <div class="error" v-if="!$v.defaultState.phone_number.numeric">Номер телефона должен состоять только из цифр</div>
                   <div v-if="$v.defaultState.phone_number.$error">
-                    <div class="error" v-if="!$v.defaultState.phone_number.isValidPhoneLenght">Номер телефона должен состоять из 11 цифер</div>
+                    <div class="error" v-if="!$v.defaultState.phone_number.isValidPhoneLenght">Номер телефона должен состоять из 11 цифр</div>
                   <div class="error" v-if="!$v.defaultState.phone_number.isValidFirstPhoneDigit">Номер телефона должен должен начинаться с 7</div>
                     </div>
                  
